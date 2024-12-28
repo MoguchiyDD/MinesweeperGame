@@ -162,10 +162,12 @@ def mw_win_or_lose(
         activeforeground=TEXT,
         activebackground=HOVER,
         highlightthickness=1,
+        highlightcolor=TEXT,
         highlightbackground=TEXT,
         borderwidth=0,
         font=font.Font(size=MW_BUTTON_FONT_SIZE),
         text=MW_YES_BUTTON_NAME,
+        default="active",
         command=restart
     )
     yes_btn.grid(column=0, row=1, padx=MW_PADY_CONTENT, pady=MW_PADY_CONTENT)
@@ -178,10 +180,12 @@ def mw_win_or_lose(
         activeforeground=TEXT,
         activebackground=HOVER,
         highlightthickness=1,
+        highlightcolor=TEXT,
         highlightbackground=TEXT,
         borderwidth=0,
         font=font.Font(size=MW_BUTTON_FONT_SIZE),
         text=MW_NO_BUTTON_NAME,
+        default="active",
         command=close
     )
     no_btn.grid(column=1, row=1, padx=MW_PADY_CONTENT, pady=MW_PADY_CONTENT)
@@ -191,6 +195,5 @@ def mw_win_or_lose(
     mw.grab_set()
     mw.focus_set()
     mw.wait_window()
-
 
 # --------------------------------------
