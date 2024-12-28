@@ -12,6 +12,7 @@ from content.footer import footer, footer_copyright
 
 from settings import TITLE, WIDTH, HEIGHT, PRIMARY
 
+from os import path as ospath
 from sys import path as syspath
 syspath.append(__file__)
 
@@ -26,7 +27,7 @@ y = (root.winfo_screenheight() - HEIGHT) // 2
 
 # Settings
 root.configure(background=PRIMARY)
-root.iconbitmap("../icons/favicons.ico")
+root.iconbitmap(ospath.abspath("favicons.ico"))
 
 root.title(TITLE)
 root.geometry(f"{ WIDTH }x{ HEIGHT }+{ x }+{ y }")
