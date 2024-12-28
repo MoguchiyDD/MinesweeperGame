@@ -26,6 +26,7 @@ y = (root.winfo_screenheight() - HEIGHT) // 2
 
 # Settings
 root.configure(background=PRIMARY)
+root.iconbitmap("../icons/favicons.ico")
 
 root.title(TITLE)
 root.geometry(f"{ WIDTH }x{ HEIGHT }+{ x }+{ y }")
