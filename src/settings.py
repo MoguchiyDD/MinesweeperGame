@@ -16,6 +16,13 @@ if platform == "win32":
     WIDTH_CELL = 50
     HEIGHT_CELL = 50
     PAD_CELL = 2
+
+    # COLORS
+    PRIMARY = "#1A2636"
+    SECONDARY = "#2C3A4B"
+    HOVER = "#4B6577"
+    DARK = "#0A0F17"
+    TEXT = "#F1F5F9"
 else:
     # TOTAL
     WIDTH = 576
@@ -26,6 +33,12 @@ else:
     HEIGHT_CELL = 44
     PAD_CELL = 1
 
+    # COLORS
+    PRIMARY = "#0F172A"
+    SECONDARY = "#1E293B"
+    HOVER = "#334155"
+    DARK = "#020617"
+    TEXT = "#F1F5F9"
 
 # TOTAL
 TITLE = "Minesweeper Game"
@@ -65,10 +78,3 @@ HEADER_CELL_FONT_SIZE = 13
 FOOTER_FONT_SIZE = 9
 MW_LABEL_FONT_SIZE = 11
 MW_BUTTON_FONT_SIZE = 11
-
-# COLORS
-PRIMARY = "#0F172A"
-SECONDARY = "#1E293B"
-HOVER = "#334155"
-DARK = "#020617"
-TEXT = "#F1F5F9"
