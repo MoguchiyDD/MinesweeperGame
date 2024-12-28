@@ -25,6 +25,8 @@ from settings import (
     TEXT
 )
 
+from sys import platform
+
 
 # --------------- HEIGHT ---------------
 
@@ -167,7 +169,7 @@ def mw_win_or_lose(
         borderwidth=0,
         font=font.Font(size=MW_BUTTON_FONT_SIZE),
         text=MW_YES_BUTTON_NAME,
-        default="active",
+        default="active" if platform == "win32" else "disabled",
         command=restart
     )
     yes_btn.grid(column=0, row=1, padx=MW_PADY_CONTENT, pady=MW_PADY_CONTENT)
@@ -185,7 +187,7 @@ def mw_win_or_lose(
         borderwidth=0,
         font=font.Font(size=MW_BUTTON_FONT_SIZE),
         text=MW_NO_BUTTON_NAME,
-        default="active",
+        default="active" if platform == "win32" else "disabled",
         command=close
     )
     no_btn.grid(column=1, row=1, padx=MW_PADY_CONTENT, pady=MW_PADY_CONTENT)
